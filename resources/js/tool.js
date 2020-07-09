@@ -22,7 +22,7 @@ Nova.booting((Vue, router, store) => {
 
       if (viewElement) {
 
-        viewElement.click()
+        viewElement.dblclick()
 
       }
 
@@ -49,7 +49,7 @@ Nova.booting((Vue, router, store) => {
         for (const row of rows) {
 
           row.style.cursor = 'pointer'
-          row.addEventListener('dblclick', navigateToResource)
+          row.addEventListener('click', navigateToResource)
 
           listeners.push(row)
 
