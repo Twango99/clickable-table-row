@@ -34,7 +34,7 @@ Nova.booting((Vue, router, store) => {
 
     while (listeners.length) {
 
-      listeners.pop().removeEventListener('click', navigateToResource)
+      listeners.pop().removeEventListener('dblclick', navigateToResource)
 
     }
 
